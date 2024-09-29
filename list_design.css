@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(135, 206, 250), rgb(255, 160, 122));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput,
+#dateInput {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+#addTaskBtn {
+    padding: 8px;
+    border: none;
+    background-color: #0e0f57;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#addTaskBtn:hover {
+    background-color: #180f8f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table td a {
+    margin: 0 5px;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+table td a.delete {
+    color: #dc3545;
+}
+
+table td a.delete:hover {
+    color: #c82333;
+}
+
+table td a.save {
+    color: #28a745;
+}
+
+table td a.save:hover {
+    color: #218838;
+}
